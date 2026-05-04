@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_crypto_tickers
+    description: "Staging модель для крипто тикеров"
+    columns:
+      - name: id
+        description: "Уникальный идентификатор монеты"
+        tests:
+          - unique
+          - not_null
+      - name: rank
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
