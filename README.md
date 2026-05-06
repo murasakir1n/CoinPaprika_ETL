@@ -2,12 +2,15 @@
 
 ETL pipeline для загрузки крипто данных с CoinPaprika API.
 
+## Дашборд
+![Dashboard](Dashboard.png)
+
 ## Стек
 - Apache Airflow 2.9 — оркестрация
-- PostgreSQL 16 — хранилище
+- PostgreSQL 16 — хранилище  
 - dbt — трансформации и тесты
+- Metabase — визуализация
 - Docker + docker-compose — инфраструктура
-- Python (requests, pandas, sqlalchemy)
 
 ## Архитектура
 CoinPaprika API → Airflow (extract → transform → load) → PostgreSQL → dbt models
