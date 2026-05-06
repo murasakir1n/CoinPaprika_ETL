@@ -17,7 +17,7 @@ CoinPaprika API → Airflow (extract → transform → load) → PostgreSQL → 
 
 ## dbt модели
 - staging/stg_crypto_tickers — очистка и дедупликация
-- marts/top_100_by_market_cap — топ 100 по капитализации  
+- marts/top_10_by_market_cap — топ 10 по капитализации  
 - marts/closest_to_ath — монеты близкие к историческому максимуму
 - marts/volatility — классификация по волатильности
 
